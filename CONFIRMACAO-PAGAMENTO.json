@@ -1,42 +1,31 @@
 {
-  "name": "CONFIRMACAO-PAGAMENTO",
-  "auto": true,
-  "contexts": [
-    "aguardando_pagamento"
-  ],
-  "responses": [
+  "name": "projects/solbot/agent/intents/captura_pagamento",
+  "displayName": "CAPTURA_PAGAMENTO",
+  "priority": 500000,
+  "parameters": [
     {
-      "resetContexts": false,
-      "affectedContexts": [
-        {
-          "name": "confirmacao_final",
-          "lifespan": 3
-        }
-      ],
-      "parameters": [
-        {
-          "name": "forma_pagamento",
-          "displayName": "forma_pagamento",
-          "value": "$forma_pagamento",
-          "dataType": "@forma_pagamento",
-          "required": true,
-          "prompts": [
-            "Qual a forma de pagamento?"
-          ]
-        }
-      ],
-      "messages": [
-        {
-          "type": 0,
-          "lang": "pt-br",
-          "speech": [
-            "Certo! Pagamento via $forma_pagamento. Deseja confirmar o pedido?"
-          ]
-        }
-      ]
+      "displayName": "forma_pagamento",
+      "entityTypeDisplayName": "@forma_pagamento",
+      "value": "$forma_pagamento",
+      "isList": false
     }
   ],
-  "priority": 500000,
-  "webhookUsed": false,
-  "fallbackIntent": false
+  "messages": [
+    {
+      "text": {
+        "text": [
+          "Certo! Pagamento em $forma_pagamento 💳\nAgora vamos confirmar seu pedido..."
+        ]
+      }
+    }
+  ],
+  "inputContextNames": [
+    "projects/solbot/agent/sessions/-/contexts/await_pagamento"
+  ],
+  "outputContexts": [
+    {
+      "name": "projects/solbot/agent/sessions/-/contexts/await_confirmacao",
+      "lifespanCount": 1
+    }
+  ]
 }
