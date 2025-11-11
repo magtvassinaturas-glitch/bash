@@ -1,42 +1,37 @@
 {
-  "name": "CAPTURA-ENDERECO",
-  "auto": true,
-  "contexts": [
-    "aguardando_endereco"
-  ],
-  "responses": [
+  "name": "projects/solbot/agent/intents/captura_endereco",
+  "displayName": "CAPTURA_ENDERECO",
+  "priority": 500000,
+  "parameters": [
     {
-      "resetContexts": false,
-      "affectedContexts": [
-        {
-          "name": "aguardando_pagamento",
-          "lifespan": 5
-        }
-      ],
-      "parameters": [
-        {
-          "name": "endereco_completo",
-          "displayName": "endereco_completo",
-          "value": "$endereco_completo",
-          "dataType": "@sys.address",
-          "required": true,
-          "prompts": [
-            "Por favor, informe a rua, número e bairro."
-          ]
-        }
-      ],
-      "messages": [
-        {
-          "type": 0,
-          "lang": "pt-br",
-          "speech": [
-            "Perfeito! Endereço registrado: $endereco_completo 🏠\nQual a forma de pagamento? (Pix, Cartão ou Dinheiro?)"
-          ]
-        }
-      ]
+      "displayName": "endereco_rua",
+      "entityTypeDisplayName": "@sys.address",
+      "value": "$endereco_rua",
+      "isList": false
+    },
+    {
+      "displayName": "endereco_bairro",
+      "entityTypeDisplayName": "@sys.location",
+      "value": "$endereco_bairro",
+      "isList": false
     }
   ],
-  "priority": 500000,
-  "webhookUsed": false,
-  "fallbackIntent": false
+  "messages": [
+    {
+      "text": {
+        "text": [
+          "Beleza! Endereço anotado: $endereco_rua, $endereco_bairro 🏠\nQual será a forma de pagamento? (Pix, Cartão ou Dinheiro?)"
+        ]
+      }
+    }
+  ],
+  "inputContextNames": [
+    "projects/solbot/agent/sessions/-/contexts/await_endereco"
+  ],
+  "outputContexts": [
+    {
+      "name": "projects/solbot/agent/sessions/-/contexts/await_pagamento",
+      "lifespanCount": 10
+    }
+  ]
 }
