@@ -1,42 +1,31 @@
 {
-  "name": "CAPTURA-PEDIDO",
-  "auto": true,
-  "contexts": [
-    "aguardando_pedido"
-  ],
-  "responses": [
+  "name": "projects/solbot/agent/intents/captura_pedido",
+  "displayName": "CAPTURA_PEDIDO",
+  "priority": 500000,
+  "parameters": [
     {
-      "resetContexts": false,
-      "affectedContexts": [
-        {
-          "name": "aguardando_endereco",
-          "lifespan": 5
-        }
-      ],
-      "parameters": [
-        {
-          "name": "prato_tipico",
-          "displayName": "prato_tipico",
-          "value": "$prato_tipico",
-          "dataType": "@prato_tipico",
-          "required": true,
-          "prompts": [
-            "Qual prato você gostaria?"
-          ]
-        }
-      ],
-      "messages": [
-        {
-          "type": 0,
-          "lang": "pt-br",
-          "speech": [
-            "Beleza! Anotei $prato_tipico. Qual é o endereço para entrega?"
-          ]
-        }
-      ]
+      "displayName": "prato_tipico",
+      "entityTypeDisplayName": "@prato_tipico",
+      "value": "$prato_tipico",
+      "isList": true
     }
   ],
-  "priority": 500000,
-  "webhookUsed": false,
-  "fallbackIntent": false
+  "messages": [
+    {
+      "text": {
+        "text": [
+          "Perfeito! Você pediu: $prato_tipico 😋\nAgora me informe o endereço para entrega (rua, número e bairro)."
+        ]
+      }
+    }
+  ],
+  "inputContextNames": [
+    "projects/solbot/agent/sessions/-/contexts/await_pedido"
+  ],
+  "outputContexts": [
+    {
+      "name": "projects/solbot/agent/sessions/-/contexts/await_endereco",
+      "lifespanCount": 10
+    }
+  ]
 }
