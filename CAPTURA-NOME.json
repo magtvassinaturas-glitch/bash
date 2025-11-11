@@ -1,43 +1,31 @@
 {
-  "name": "CAPTURA-NOME",
-  "auto": true,
-  "contexts": [
-    "aguardando_nome"
-  ],
-  "responses": [
+  "name": "projects/solbot/agent/intents/captura_nome",
+  "displayName": "CAPTURA_NOME",
+  "priority": 500000,
+  "parameters": [
     {
-      "resetContexts": false,
-      "affectedContexts": [
-        {
-          "name": "aguardando_pedido",
-          "lifespan": 5
-        }
-      ],
-      "parameters": [
-        {
-          "name": "novo_cliente",
-          "displayName": "novo_cliente",
-          "value": "$novo_cliente",
-          "dataType": "@sys.given-name",
-          "required": true,
-          "prompts": [
-            "Qual é o seu nome?"
-          ]
-        }
-      ],
-      "messages": [
-        {
-          "type": 0,
-          "lang": "pt-br",
-          "speech": [
-            "Prazer, $novo_cliente! 😄",
-            "Olá, $novo_cliente! O que você vai querer pedir hoje?"
-          ]
-        }
-      ]
+      "displayName": "novo_cliente",
+      "entityTypeDisplayName": "@sys.given-name",
+      "value": "$novo_cliente",
+      "isList": false
     }
   ],
-  "priority": 500000,
-  "webhookUsed": false,
-  "fallbackIntent": false
+  "messages": [
+    {
+      "text": {
+        "text": [
+          "Ótimo, $novo_cliente! Aqui está nosso cardápio de hoje:\n🍲 GALINHADA R$15,00\n🍲 VATAPÁ CHARQUE R$25,00\n🍲 MISTURA DA BARROSO R$35,00\n🍲 VATAPÁ FRANGO R$15,00\n🍲 VATAPÁ DE CAMARÃO R$22,00\n🍲 MANIÇOBA R$25,00\n🍲 ARROZ PARAENSE R$25,00\n🍲 FRANGO NO TUCUPI R$23,00\n🍲 PATO NO TUCUPI R$25,00\n🍲 CARANGUEJO c/ FAROFA R$40,00\n\nO que você vai querer pedir hoje?"
+        ]
+      }
+    }
+  ],
+  "inputContextNames": [
+    "projects/solbot/agent/sessions/-/contexts/await_nome"
+  ],
+  "outputContexts": [
+    {
+      "name": "projects/solbot/agent/sessions/-/contexts/await_pedido",
+      "lifespanCount": 10
+    }
+  ]
 }
