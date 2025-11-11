@@ -1,0 +1,42 @@
+{
+  "name": "CAPTURA-ENDERECO",
+  "auto": true,
+  "contexts": [
+    "aguardando_endereco"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "aguardando_pagamento",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "name": "endereco_completo",
+          "displayName": "endereco_completo",
+          "value": "$endereco_completo",
+          "dataType": "@sys.address",
+          "required": true,
+          "prompts": [
+            "Por favor, informe a rua, número e bairro."
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": [
+            "Perfeito! Endereço registrado: $endereco_completo 🏠\nQual a forma de pagamento? (Pix, Cartão ou Dinheiro?)"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "fallbackIntent": false
+}

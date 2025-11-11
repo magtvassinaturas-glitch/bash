@@ -1,0 +1,16 @@
+{
+  "description": "Agente SOL - Comidas Típicas da Meire",
+  "language": "pt-br",
+  "timeZone": "America/Fortaleza",
+  "googleAssistant": {
+    "project": "",
+    "welcomeIntent": "",
+    "startIntents": [],
+    "autoPreviewEnabled": false
+  },
+  "enableVersioning": false,
+  "defaultTimezone": "America/Fortaleza",
+  "name": "SOL",
+  "supportedLanguages": [],
+  "secondaryLanguages": []
+}

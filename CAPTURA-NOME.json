@@ -1,0 +1,43 @@
+{
+  "name": "CAPTURA-NOME",
+  "auto": true,
+  "contexts": [
+    "aguardando_nome"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "aguardando_pedido",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "name": "novo_cliente",
+          "displayName": "novo_cliente",
+          "value": "$novo_cliente",
+          "dataType": "@sys.given-name",
+          "required": true,
+          "prompts": [
+            "Qual é o seu nome?"
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": [
+            "Prazer, $novo_cliente! 😄",
+            "Olá, $novo_cliente! O que você vai querer pedir hoje?"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "fallbackIntent": false
+}

@@ -1,0 +1,26 @@
+{
+  "name": "CONFIRMACAO-PEDIDO",
+  "auto": true,
+  "contexts": [
+    "confirmacao_final"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": [
+            "Vamos confirmar seu pedido, $novo_cliente:\n📦 Pedido N°: %reply_count_overall%\n🥘 Pedido: $prato_tipico\n📍 Endereço: $endereco_completo\n💰 Valor total: R$ $valor_total\n💳 Pagamento: $forma_pagamento\n🕓 Gerado em: %day_of_month%/%month%/%year% %hour_of_day%:%minute%\n\n✅ PEDIDO CONFIRMADO!\nSeu pedido logo sairá para entrega! 🚀\n\nObrigado por pedir com a gente 💚"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "fallbackIntent": false
+}

@@ -1,0 +1,42 @@
+{
+  "name": "CAPTURA-PEDIDO",
+  "auto": true,
+  "contexts": [
+    "aguardando_pedido"
+  ],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "aguardando_endereco",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [
+        {
+          "name": "prato_tipico",
+          "displayName": "prato_tipico",
+          "value": "$prato_tipico",
+          "dataType": "@prato_tipico",
+          "required": true,
+          "prompts": [
+            "Qual prato você gostaria?"
+          ]
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": [
+            "Beleza! Anotei $prato_tipico. Qual é o endereço para entrega?"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "fallbackIntent": false
+}

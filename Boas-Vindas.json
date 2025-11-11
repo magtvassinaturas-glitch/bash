@@ -1,0 +1,29 @@
+{
+  "name": "Boas-Vindas",
+  "auto": true,
+  "contexts": [],
+  "responses": [
+    {
+      "resetContexts": false,
+      "affectedContexts": [
+        {
+          "name": "aguardando_nome",
+          "lifespan": 5
+        }
+      ],
+      "parameters": [],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": [
+            "Olá! Sou a SOL, assistente virtual da *Comidas Típicas da Meire*! ☀️\nAgradecemos por escolher a gente.\nPor favor, me diga seu nome pra registrar seu pedido.\n\n🍲 CARDÁPIO DO DIA 🍲\n(Valores válidos para Almoço e Janta)\n\n1. GALINHADA - R$ 15,00\n2. VATAPÁ CHARQUE - R$ 25,00\n3. MISTURA DA BARROSO - R$ 35,00\n4. VATAPÁ FRANGO - R$ 15,00\n5. VATAPÁ DE CAMARÃO - R$ 22,00\n6. MANIÇOBA - R$ 25,00\n7. ARROZ PARAENSE - R$ 25,00\n8. FRANGO NO TUCUPI - R$ 23,00\n9. PATO NO TUCUPI - R$ 25,00\n10. CARANGUEJO c/ FAROFA - R$ 40,00\n\n⚠️ Entregas grátis apenas em Tucuruí.\n🍽️ Outras comidas apenas por encomenda.\n\nO que você vai querer pedir hoje?"
+          ]
+        }
+      ]
+    }
+  ],
+  "priority": 500000,
+  "webhookUsed": false,
+  "fallbackIntent": false
+}

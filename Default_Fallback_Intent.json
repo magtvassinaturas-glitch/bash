@@ -1,0 +1,18 @@
+{
+  "name": "Default Fallback Intent",
+  "auto": true,
+  "fallbackIntent": true,
+  "responses": [
+    {
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": [
+            "Desculpe, não consegui compreender. Pode repetir?"
+          ]
+        }
+      ]
+    }
+  ]
+}

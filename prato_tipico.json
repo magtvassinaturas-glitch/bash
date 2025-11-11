@@ -1,0 +1,84 @@
+{
+  "name": "prato_tipico",
+  "isEnum": false,
+  "automatedExpansion": false,
+  "entries": [
+    {
+      "value": "galinhada",
+      "synonyms": [
+        "galinhada",
+        "galinha"
+      ]
+    },
+    {
+      "value": "vatapa_charque",
+      "synonyms": [
+        "vatapá charque",
+        "vatapa charque",
+        "vatapá de charque",
+        "vatapá"
+      ]
+    },
+    {
+      "value": "mistura_da_barroso",
+      "synonyms": [
+        "mistura da barroso",
+        "mistura",
+        "mistura barroso"
+      ]
+    },
+    {
+      "value": "vatapa_frango",
+      "synonyms": [
+        "vatapá frango",
+        "vatapa de frango"
+      ]
+    },
+    {
+      "value": "vatapa_camarao",
+      "synonyms": [
+        "vatapá de camarão",
+        "vatapa de camarão",
+        "camarão",
+        "camarao"
+      ]
+    },
+    {
+      "value": "manicoba",
+      "synonyms": [
+        "maniçoba",
+        "manicoba"
+      ]
+    },
+    {
+      "value": "arroz_paraense",
+      "synonyms": [
+        "arroz paraense",
+        "arroz"
+      ]
+    },
+    {
+      "value": "frango_tucupi",
+      "synonyms": [
+        "frango no tucupi",
+        "frango tucupi",
+        "frango no tucupi"
+      ]
+    },
+    {
+      "value": "pato_tucupi",
+      "synonyms": [
+        "pato no tucupi",
+        "pato tucupi"
+      ]
+    },
+    {
+      "value": "caranguejo_farofa",
+      "synonyms": [
+        "caranguejo com farofa",
+        "caranguejo",
+        "caranguejo c/ farofa"
+      ]
+    }
+  ]
+}
