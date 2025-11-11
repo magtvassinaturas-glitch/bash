@@ -1,16 +1,20 @@
 {
-  "description": "Agente SOL - Comidas Típicas da Meire",
+  "description": "Agente de atendimento para restaurante de comidas típicas - SOL",
   "language": "pt-br",
-  "timeZone": "America/Fortaleza",
+  "shortDescription": "Bot de delivery para restaurante de comidas típicas",
+  "supportedLanguages": [
+    "pt-br"
+  ],
+  "disableInteractionLogs": false,
+  "disableStackdriverLogs": true,
   "googleAssistant": {
-    "project": "",
-    "welcomeIntent": "",
-    "startIntents": [],
-    "autoPreviewEnabled": false
+    "googleAssistantCompatible": false
   },
-  "enableVersioning": false,
-  "defaultTimezone": "America/Fortaleza",
-  "name": "SOL",
-  "supportedLanguages": [],
-  "secondaryLanguages": []
+  "defaultTimezone": "America/Belem",
+  "isPrivate": true,
+  "mlMinConfidence": 0.3,
+  "supportedLanguagesSettings": {},
+  "speechToTextSettings": {
+    "enableSpeechAdaptation": false
+  }
 }
