@@ -1,0 +1,19 @@
+{
+  "name": "CapturarPagamento",
+  "auto": true,
+  "responses": [
+    {
+      "parameters": [
+        { "name": "pagamento", "dataType": "@sys.any", "value": "$pagamento" }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Combinado! ✅\nA forma de pagamento registrada foi: $pagamento.\n\n{{#equals $pagamento \"dinheiro\"}}Se for pagar em dinheiro, você precisará de troco? Se sim, para qual valor? 🔄{{/equals}}{{^equals}}Vou preparar o resumo final.{{/equals}}"
+        }
+      ],
+      "action": "capturar-pagamento"
+    }
+  ]
+}
