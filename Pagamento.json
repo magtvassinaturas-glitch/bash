@@ -1,0 +1,12 @@
+{
+  "id": "pagamento-001",
+  "name": "Pagamento",
+  "isOverridable": true,
+  "isEnum": false,
+  "automatedExpansion": true,
+  "entries": [
+    { "value": "dinheiro", "synonyms": ["dinheiro", "cash"] },
+    { "value": "cartão", "synonyms": ["cartao", "cartão", "cartão de crédito", "cartão de débito"] },
+    { "value": "pix", "synonyms": ["pix", "pix transferencia"] }
+  ]
+}
