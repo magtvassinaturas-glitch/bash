@@ -1,0 +1,18 @@
+[
+  {
+    "value": "hamburguer",
+    "synonyms": ["hambúrguer", "burgao", "burger"]
+  },
+  {
+    "value": "pizza",
+    "synonyms": ["pizzas", "fatias"]
+  },
+  {
+    "value": "batata frita",
+    "synonyms": ["fritas", "porção de batata"]
+  },
+  {
+    "value": "refrigerante",
+    "synonyms": ["refri", "coca", "guaraná"]
+  }
+]
