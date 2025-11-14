@@ -1,0 +1,17 @@
+[
+  {
+    "data": [
+      { "text": "meu nome é " },
+      { "text": "Davi", "meta": "@sys.person", "alias": "nome" }
+    ],
+    "isTemplate": false
+  },
+  {
+    "data": [
+      { "text": "sou " },
+      { "text": "Ana", "meta": "@sys.person", "alias": "nome" }
+    ],
+    "isTemplate": false
+  },
+  { "data": [{ "text": "me chamo João" }], "isTemplate": false }
+]
