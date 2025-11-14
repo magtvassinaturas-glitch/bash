@@ -1,18 +1,11 @@
 [
-  {
-    "value": "hamburguer",
-    "synonyms": ["hambúrguer", "burgao", "burger"]
-  },
-  {
-    "value": "pizza",
-    "synonyms": ["pizzas", "fatias"]
-  },
-  {
-    "value": "batata frita",
-    "synonyms": ["fritas", "porção de batata"]
-  },
-  {
-    "value": "refrigerante",
-    "synonyms": ["refri", "coca", "guaraná"]
-  }
+  { "value": "x-salada", "synonyms": ["x salada", "x-salada", "xsalada", "salada"] },
+  { "value": "x-rato", "synonyms": ["x rato", "x-rato", "xrato", "rato"] },
+  { "value": "x-calabresa", "synonyms": ["x calabresa", "x-calabresa", "calabresa"] },
+  { "value": "x-frango", "synonyms": ["x frango", "x-frango", "frango"] },
+  { "value": "x-hamburger", "synonyms": ["x hamburger", "x-hambúrguer", "hamburger", "hamburguer"] },
+  { "value": "x-tudo", "synonyms": ["x tudo", "x-tudo", "xtudo", "tudo"] },
+  { "value": "marmita pequena", "synonyms": ["marmita pequena", "marmita"] },
+  { "value": "marmita grande", "synonyms": ["marmita grande"] },
+  { "value": "porção batata frita", "synonyms": ["batata frita", "porção de batata", "fritas"] }
 ]
