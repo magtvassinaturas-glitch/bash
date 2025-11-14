@@ -1,0 +1,8 @@
+[
+  { "value": "refrigerante lata", "synonyms": ["lata", "refrigerante lata", "refri lata"] },
+  { "value": "refrigerante 1l", "synonyms": ["1l", "refrigerante 1l", "refri 1l", "1 litro"] },
+  { "value": "refrigerante 2l", "synonyms": ["2l", "refrigerante 2l", "refri 2l", "2 litros"] },
+  { "value": "suco manga", "synonyms": ["suco manga", "manga"] },
+  { "value": "suco abacaxi", "synonyms": ["suco abacaxi", "abacaxi"] },
+  { "value": "suco limao", "synonyms": ["suco limão", "limão"] }
+]
