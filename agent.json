@@ -1,20 +1,12 @@
 {
-  "description": "Agente de atendimento para restaurante de comidas típicas - SOL",
+  "description": "Bot genérico para lanchonetes. Adaptável.",
   "language": "pt-br",
-  "shortDescription": "Bot de delivery para restaurante de comidas típicas",
-  "supportedLanguages": [
-    "pt-br"
-  ],
-  "disableInteractionLogs": false,
-  "disableStackdriverLogs": true,
-  "googleAssistant": {
-    "googleAssistantCompatible": false
-  },
-  "defaultTimezone": "America/Belem",
+  "shortDescription": "",
+  "displayName": "LanchoneteBot",
+  "defaultTimezone": "America/Sao_Paulo",
   "isPrivate": true,
   "mlMinConfidence": 0.3,
-  "supportedLanguagesSettings": {},
-  "speechToTextSettings": {
-    "enableSpeechAdaptation": false
-  }
+  "supportedLanguages": [],
+  "enableOnePlatformApi": true,
+  "onePlatformApiVersion": "v2"
 }
