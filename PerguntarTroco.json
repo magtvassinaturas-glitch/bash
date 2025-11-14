@@ -1,0 +1,15 @@
+{
+  "name": "PerguntarTroco",
+  "auto": true,
+  "responses": [
+    {
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Se for pagar em dinheiro, você precisará de troco? Se sim, para qual valor? 🔄"
+        }
+      ]
+    }
+  ]
+}
