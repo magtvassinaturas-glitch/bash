@@ -1,8 +1,8 @@
 {
-  "description": "Bot genérico para lanchonetes. Adaptável.",
+  "description": "Agente Leo - Lanchonete da Maria. Fluxo sem webhook; repete pedido; cardápio com valores em texto.",
   "language": "pt-br",
   "shortDescription": "",
-  "displayName": "LanchoneteBot",
+  "displayName": "Leo",
   "defaultTimezone": "America/Sao_Paulo",
   "isPrivate": true,
   "mlMinConfidence": 0.3,
