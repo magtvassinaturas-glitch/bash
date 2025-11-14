@@ -1,0 +1,15 @@
+{
+  "name": "ResumoFinal_Cartao",
+  "responses": [
+    {
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "### 📝 Resumo do Seu Pedido - Lanchonete da Maria 🚀\n\nConfirmado, $nome! Seu pedido está sendo preparado! 👨‍🍳\n\n* **Cliente:** $nome\n* **Pedido:** $pedido\n* **Endereço de Entrega:** Rua $rua, Nº $numero, Bairro $bairro\n* **Forma de Pagamento:** Cartão 💳 (Débito ou Crédito)\n* **Troco:** Não se aplica (Pagamento em Cartão) 🚫\n\nAguarde a entrega! Obrigado por escolher a Lanchonete da Maria 👋"
+        }
+      ],
+      "action": "resumo-final-cartao"
+    }
+  ]
+}
