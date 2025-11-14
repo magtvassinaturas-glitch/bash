@@ -1,0 +1,18 @@
+[
+  {
+    "data": [
+      { "text": "rua maranhao", "meta": "@sys.street-address", "alias": "rua" },
+      { "text": ", " },
+      { "text": "132", "meta": "@sys.number", "alias": "numero" },
+      { "text": " bairro " },
+      { "text": "caripe", "alias": "bairro" }
+    ],
+    "isTemplate": false
+  },
+  {
+    "data": [
+      { "text": "Rua das Flores 45 bairro centro" }
+    ],
+    "isTemplate": false
+  }
+]
