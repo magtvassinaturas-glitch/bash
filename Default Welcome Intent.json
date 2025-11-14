@@ -1,0 +1,15 @@
+{
+  "name": "Default Welcome Intent",
+  "auto": true,
+  "responses": [
+    {
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Olá! Seja muito bem-vindo(a) à Lanchonete da Maria! 😊\nPara começarmos, qual é o seu nome, por favor?"
+        }
+      ]
+    }
+  ]
+}
