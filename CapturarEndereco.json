@@ -1,0 +1,21 @@
+{
+  "name": "CapturarEndereco",
+  "auto": true,
+  "responses": [
+    {
+      "parameters": [
+        { "name": "rua", "dataType": "@sys.street-address", "value": "$rua" },
+        { "name": "numero", "dataType": "@sys.number", "value": "$numero" },
+        { "name": "bairro", "dataType": "@sys.any", "value": "$bairro" }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Perfeito, $nome! Sua encomenda será enviada para a Rua $rua, Nº $numero, no Bairro $bairro! 📍\n\nQuase finalizando! 📝\n\nQual será a forma de pagamento? Aceitamos:\n\n* 💳 **Cartão** (Débito ou Crédito - a maquininha vai até você!) 🤖\n* 📱 **PIX** (Rápido e sem contato!) 📲\n* 💰 **Dinheiro** (Troco garantido!) 💵"
+        }
+      ],
+      "action": "capturar-endereco"
+    }
+  ]
+}
