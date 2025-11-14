@@ -1,0 +1,23 @@
+{
+  "name": "CapturarNome",
+  "auto": true,
+  "responses": [
+    {
+      "parameters": [
+        {
+          "name": "nome",
+          "dataType": "@sys.person",
+          "value": "$nome"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "🎉 Olá, $nome! É um prazer atendê-lo! 🎉\nConfira nosso cardápio delicioso e cheio de sabor de hoje. Lembre-se, atendemos até a **01:00 da manhã**! 🌙\n\n---\n\n### 🥪 Lanches Super Caprichados!\n\n* ✅️ **X-SALADA**: Pão, hambúrguer, queijo, presunto, ovo, alface e tomate. 🥬🍅\n    * Valor: R$ 10,00\n* ✅️ **X-RATO**: Pão, hambúrguer, queijo, presunto, ovo, salsicha, batata palha e maionese. 🐭\n    * Valor: R$ 17,00\n* ✅️ **X-CALABRESA**: Pão, hambúrguer, queijo, presunto, ovo, calabresa fatiada e molho especial. 🌶️\n    * Valor: R$ 20,00\n* ✅️ **X-FRANGO**: Pão, filé de frango desfiado, queijo, presunto, ovo, alface e tomate. 🐔\n    * Valor: R$ 18,00\n* ✅️ **X-HAMBURGER**: Pão, dois hambúrgueres, queijo, presunto, ovo, bacon e molho barbecue. 🥓\n    * Valor: R$ 22,00\n* ✅️ **X-TUDO**: Pão, TUDO o que você tem direito! Uma explosão de sabores! 🚀\n    * Valor: R$ 28,00\n\n### 🥤 Bebidas para Refrescar!\n\n* ✅️ **REFRIGERANTE LATA**\n    * Valor: R$ 5,00\n* ✅️ **REFRIGERANTE DE 1L**\n    * Valor: R$ 8,00\n* ✅️ **REFRIGERANTE DE 2L**\n    * Valor: R$ 12,00\n* ✅️ **SUCO DE (SABOR)** (Manga, Abacaxi, Limão, etc.) 🍍🥭\n    * Valor: R$ 8,00\n\n---\n\nQual o seu pedido, $nome? Fico aguardando! 😉"
+        }
+      ],
+      "action": "capturar-nome"
+    }
+  ]
+}
