@@ -1,15 +1,0 @@
-{
-  "name": "MostrarCardapio",
-  "auto": true,
-  "responses": [
-    {
-      "messages": [
-        {
-          "type": 0,
-          "lang": "pt-br",
-          "speech": "Aqui está o cardápio de hoje da Lanchonete da Maria:\n\n---\n\n### 🥪 Lanches Super Caprichados!\n\n* ✅️ **X-SALADA** – R$ 10,00\n* ✅️ **X-RATO** – R$ 17,00\n* ✅️ **X-CALABRESA** – R$ 20,00\n* ✅️ **X-FRANGO** – R$ 18,00\n* ✅️ **X-HAMBURGER** – R$ 22,00\n* ✅️ **X-TUDO** – R$ 28,00\n\n### 🥤 Bebidas\n\n* ✅️ **REFRIGERANTE LATA** – R$ 5,00\n* ✅️ **REFRIGERANTE DE 1L** – R$ 8,00\n* ✅️ **REFRIGERANTE DE 2L** – R$ 12,00\n* ✅️ **SUCO (MANGA/ABACAXI/LIMÃO)** – R$ 8,00\n\n---\n\nQual o seu pedido? 😉"
-        }
-      ]
-    }
-  ]
-}
