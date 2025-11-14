@@ -1,0 +1,23 @@
+{
+  "name": "FazerPedido",
+  "auto": true,
+  "responses": [
+    {
+      "parameters": [
+        {
+          "name": "pedido",
+          "dataType": "@sys.any",
+          "value": "$pedido"
+        }
+      ],
+      "messages": [
+        {
+          "type": 0,
+          "lang": "pt-br",
+          "speech": "Entendido! 😉✨\n\nPara onde devemos enviar seu **$pedido**?\nPor favor, me informe o endereço completo 🏡 (lembrando: Entrega Grátis apenas em Tucuruí):\n\n* **Rua:** 🛣️\n* **Número:** 🔢\n* **Bairro:** 🏘️"
+        }
+      ],
+      "action": "capturar-pedido"
+    }
+  ]
+}
