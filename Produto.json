@@ -1,0 +1,7 @@
+{
+  "id": "produto-001",
+  "name": "Produto",
+  "isOverridable": true,
+  "isEnum": false,
+  "automatedExpansion": true
+}
